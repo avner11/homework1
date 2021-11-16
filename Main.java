@@ -1,36 +1,57 @@
 package com.company;
 
-import java.util.Random;
-
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
+       /*1  int arr[]={1,3,5,6,465,3,3,2,49,87};
+         int sumThem = 0;
+         for(int i=0; i< arr.length;i++){
+             sumThem += arr[i];
+         }
+        System.out.println(sumThem);*/
 
-        Random lotoNumbers = new Random();
-        int tryTimes = 0;
-        int loto[] = new int[6];
-        int extraNumber = lotoNumbers.nextInt(1, 7);
-        while (tryTimes < 6) {
-            loto[tryTimes] = lotoNumbers.nextInt(1, 50);
-            tryTimes = tryTimes + 1;
+        /*2  int arr[]={1,3,5,6,465,3,3,2,49,87};
+        float avrge = 0.f;
+        int sumThem=0;
+        for(int i=0; i< arr.length;i++){
+            sumThem += arr[i];
+        }
+        avrge=sumThem/arr.length;
+        System.out.println(avrge);*/
+
+        /*3 Scanner inputVal= new Scanner(System.in);
+        int arr[]={1,3,5,6,465,3,3,2,49,87};
+        System.out.println("input number");
+        int valGet=inputVal.nextInt();
+        for(int i=0; i< arr.length;i++) {
+            if (valGet == arr[i]) {
+                System.out.println(String.format("the number is %d and it's on the list", arr[i]));
+                break;
+            }else if(arr[i]!=valGet && i==arr.length-1){
+                System.out.println("your number is not on the list");
+                }*/
+
+        /* 4 Scanner inputVal = new Scanner(System.in);
+        int arr[] = {1, 3, 5, 6, 465, 3, 3, 2, 49, 87};
+        System.out.println("input number");
+        int valGet = inputVal.nextInt();
+        for (int i = 0; i < arr.length; i++) {
+            if (valGet == arr[i]) {
+                System.out.println(String.format("the index is %d", i));
+
+            }*/
+
+       /* 5  int arr[] = {1, 3, 5, 6, 465, 3, 3, 2, 49, 87};
+        for (int i = arr.length-1; i > 0; i--) {
+            System.out.println(arr[i]);
+
         }
 
-        for (int check1 = 5; check1 > 1; check1--) {
-            for (int check = check1 - 1; check > 0; check--) {
-                if (loto[check1] == loto[check]) {
-                    loto[check] = lotoNumbers.nextInt(1, 50);
-                }
-            }
-
-
-        }
-        for (int q = 0; q < 6; q++) {
-            System.out.println(loto[q]);
-        }
-
-            System.out.print("  extra number is: " + extraNumber);
 
     }
 
-}
+
+    }
+
